@@ -15,7 +15,7 @@
 ** **
 
 ## Config
-####  To reload the config in game, use the command `/carpetbotplaceholders reload`
+#####  To reload the config in game, use the command `/carpetbotplaceholders reload`
 *Example & default config, file located here: `./config/CarpetBotPlaceholders.json`*
 ```json
 {
@@ -27,4 +27,4 @@
 ** **
 ## Permissions 
 
-#### To use the command `/carpetbotplaceholders reload`, you either need LuckPerms and the permission `carpetbotplaceholders.command.carpetbotplaceholders.reload`, or you need to be oped (have permission level 4)
+##### To use the command `/carpetbotplaceholders reload`, you either need LuckPerms and the permission `carpetbotplaceholders.command.carpetbotplaceholders.reload`, or you need to be oped (have permission level 4)
