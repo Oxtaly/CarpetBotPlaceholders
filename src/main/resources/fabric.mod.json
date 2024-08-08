@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "carpetbotplaceholders",
+	"version": "${version}",
+	"name": "Carpet Bot Placeholders",
+	"description": "Adds configurable prefixes for carpet bots and shadowed players",
+	"authors": [
+		"Oxtaly"
+	],
+	"contact": {
+		"homepage": "https://github.com/Oxtaly/CarpetBotPlaceholders",
+		"sources": "https://github.com/Oxtaly/CarpetBotPlaceholders"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/carpetbotplaceholders/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.oxtaly.carpetbotplaceholders.CarpetBotPlaceholders"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"carpet": ">=1.4.112",
+		"fabric-api": "*"
+	}
+}
