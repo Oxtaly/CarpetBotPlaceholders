@@ -1,8 +1,8 @@
 package com.oxtaly.carpetbotplaceholders.config;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.google.gson.Strictness;
 
 import java.io.File;
 import java.io.FileReader;
@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ConfigManager {
-    public static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().setLenient().create();
+    public static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().setStrictness(Strictness.LENIENT).create();
     public ConfigData data = ConfigData.DEFAULT;
 
     public ConfigManager() {}
@@ -19,7 +19,6 @@ public class ConfigManager {
     }
 
     public int readConfig(File file) throws IOException {
-        Logger logger = LoggerFactory.getLogger("ResourcePackManager:config");
         FileReader reader = new FileReader(file);
 
         ConfigData configData = GSON.fromJson(reader, ConfigData.class);
